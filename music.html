@@ -1,0 +1,53 @@
+<!--Caleb Quisenberry, week 4 assignment-->
+<!--Likely a standalone page until next week, may add navigation before that though, added navigation to index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <!--used former .css in order to make pages and buttons look the same across multiple pages-->
+    <link rel = "stylesheet" type = "text/css" href = "CSSWk1.css" />
+    <!--used new .js for this page, not actually in use, but exists for reason commented there-->
+    <script src="music.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="LogIn.html">Login</a>
+        <br>
+        <a href="index.html">Index</a>
+        <br>
+        <a href="RPS.html">RPS</a>
+        <br>
+        <a href="data.html">Data</a>
+      </div>
+    <!--used same image to provide continuity-->
+    <center><img src="QDragon1.png"><center></center>
+    <!--commented this out, built while following class video, did implement this functionality on index.html, added to the onclick event-->
+    <!--<button onclick="Danheim()">Danheim</button>
+    <br>
+    <br>
+    <button onclick="AtSea()">At Sea</button>-->
+    <!--used h1 to borrow formatting from other pages and make everything look more seamless-->
+    <h1>Danheim--Temple of Odin</h1>
+    <!--I liked having the audio controls for these files, so chose this format for them-->
+    <audio controls>
+        <!--see music.js file for music copyright acknowledgement-->
+        <source src="TempleOfOdin.mp3" type="audio/mpeg">
+    </audio>
+    <!--added second music file for some visual balance and practice-->
+    <!--comment below is how to do inline formatting-->
+    <!--<p>At Sea--<strong>Þat m​æ​lti m​í​n m​ó​ð​ir (my mother told me)</strong></p>-->
+    <h1>At Sea--Þat m​æ​lti m​í​n m​ó​ð​ir (my mother told me)</h1>
+    <audio controls>
+        <source src="MyMotherToldMe.mp3" type="audio/mpeg">
+    </audio>
+    <br>
+    <!--2 buttons to satisfy rubric, will try to add other functionality later-->
+    <button id="begin" onclick = "begin();">Begin</button>
+    <button id="cancel" onclick="cancel();">Cancel</button>
+    
+    
+</body>
+</html>

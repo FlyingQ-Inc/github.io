@@ -1,0 +1,62 @@
+/*Caleb Quisenberry, week1 assignment*/
+/*Formatting for h1*/
+h1
+/*color is rgb scale, can change by hovering*/
+{color: rgb(188, 240, 223);
+  /*text formatting, wide range of options*/
+  text-align: center;
+}
+
+/*body formatting*/
+body
+/*page background color*/
+/*linear gradient using transperancy and same color. Transperancy is 0 to 1*/
+{background-image: linear-gradient(to right, rgba(112, 38, 109, 0.2), rgba(112, 38, 109, 0.9));
+}
+/*Button style formatting, no function added*/
+/*button styling took me a while,used this site for reference, https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate3 I understand what is being done,
+set styling for static button, then set styling for when pointer is over button, then set styling for activated button.*/
+button {
+  /*can be set to inline vs inline-block, block allows to set width and height and respects margins/padding where inline does not, source: Google search*/
+  display: inline-block;
+  /*basically a margin, Padding is used to create space around an element's content, inside of any defined borders.*/
+  padding: 15px 25px;
+  /*affects size of button along with padding setting*/
+  font-size: 24px;
+  /*what the mouse pointer looks like when over button, hand, pointer etc*/
+  cursor: pointer;
+  /*alignment of text on button*/
+  text-align: center;
+  /*color of text*/
+  color: rgb(255, 255, 255);
+  /*color of button, static*/
+  background-color: rgb(150, 0, 0);
+  /*settings for border, sold dashed etc, color, radius for rounded corners or circle*/
+  border: solid;
+  border-color: rgb(0, 0, 0);
+  border-radius: 15px;
+  /*here I used the box shadow for an animated button, can be used as a hover setting or many other things I'm sure*/
+  box-shadow: 0 9px rgb(56, 56, 56) ;
+}
+/*settings for what happens when the mouse is hovered over the button.Can add transition-duration to main button formatting to set speed of the hover effect.
+Here I wanted it to appear to light up some when hover so set color brighter than background*/
+button:hover {background-color: rgb(255, 0, 0)}
+/*What happens when clicked, here the color changes and the box shadow effectively shrinks from 9 pixels to 5 pixels animated by "transform" 
+transform moves the button downwards 4 pixels, giving the appearance of a "press".*/
+button:active {
+  background-color: rgb(150, 0, 0);
+  box-shadow: 0 5px rgb(56, 56, 56);
+  transform: translateY(4px);
+}
+/*formatting for nav bar, on hover*/
+.topnav a:hover {
+  background-color: #8264d3;
+  color: black;
+}
+table, th, td {
+  border: 4px solid rgb(53, 24, 47);
+  border-radius: 4px;
+}
+th {
+  background-color: #bb0894;
+}

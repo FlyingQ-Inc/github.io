@@ -1,0 +1,46 @@
+/*Caleb Quisenberry, week3 assignment*/
+/*Formatting for h1*/
+h1
+/*color is rgb scale, can change by hovering*/
+{color: rgb(188, 240, 223);
+  /*text formatting, wide range of options*/
+  text-align: center;
+}
+
+/*body formatting*/
+body
+/*page background color*/
+/*linear gradient using transperancy and same color. Transperancy is 0 to 1*/
+{
+    background-image: linear-gradient(to right, rgba(112, 38, 109, 0.2), rgba(112, 38, 109, 0.9));
+}
+
+
+
+input  
+{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 4px solid rgb(67, 31, 68);
+    border-radius: 10px;
+    text-align: center;
+}
+input[type=text]:focus 
+{
+    background-color: rgb(248, 156, 248);
+}
+input[type=number]:focus {
+    background-color: rgb(248, 156, 248);
+  }
+input[type=submit] 
+{
+    background-color: #3d0534;
+    border: 5px solid rgb(3, 3, 3);
+    color: rgb(248, 211, 245);
+    padding: 16px 32px;
+    text-decoration: ;
+    margin: 4px 2px;
+    cursor: pointer;
+}

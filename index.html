@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--Caleb Quisenberry, week1, week 2 assignment-->
+<!--default language-->
+<html lang="en">
+    <!--header section-->
+<head>
+    <!--This meta info came with default template-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link to css, had trouble getting file to link, set different folder for assets and moved css there, then noticed no 
+        leading tag when searching the web for "why won't my css link" left the assets in place for future reference, this note is not relevant anymore,
+        changed the location of files-->
+    <link rel = "stylesheet" type = "text/css" href = "CSSWk1.css" />
+    <!--link to javascript code snippet, stayed with the assets folder I had used in other links-->
+    <script src="code.js"></script>
+    <!--Text here will display on tab of browser-->    
+    <title>Flying Q Gaming</title>
+</head>
+<!--body section-->
+<body>
+    <!--THe div elemnet (division) is used for marking out a block of content, can contain other div elements-->
+    <div class="topnav">
+        <a class="active" href="LogIn.html">Login</a>
+        <br>
+        <a href="music.html">Music</a>
+        <br>
+        <a href="RPS.html">RPS</a>
+        <br>
+        <a href="data.html">Data</a>
+      </div>
+    <!--image link, had similar problem linking, had placed in assets folder, then forgot to add assets/ to the line-->
+    <center><img src="QDragon1.png"><center>
+    <!--text display, can be formatted, centered etc. Pulling format from css file-->
+    <h1>Flying Q Gaming</h1>
+    <!--code line for button, uses css for formatting, added onclick function, pulls from code.js file-->
+    <!--First time I've stacked multiple functions in one onclick event, this plays an old school modem noise while countdown runs-->
+    <!--Added sound for week 4, added 2 functions to code.js-->
+    <button id = countDown onclick = "countDown(); DialUp()">Rock, Paper, Scissors</button>
+    <!--line breaks for layout improvement-->
+    <br>
+    <br>
+    <!--divider and location for timer display-->
+    <div id="countdownTimer"</div>
+    <!--Plain text, not affected by header formatting in CSS-->
+    <p>These games<br>are brought to you<br>by Flying Q Gaming</p>
+    <!--The alert can be changed to say anything, this command makes a popup and gives a confirm button-->
+    <script>alert("Abandon Hope, All Ye Who Enter")</script>
+    
+</body>
+</html>
